@@ -30,6 +30,9 @@ jobs:
        
     - name: Terraform Validate
       run: terraform validate
+      
+    - name: Terraform Plan
+      run: terraform plan
 
     - uses: terraform-linters/setup-tflint@v3
       with:
